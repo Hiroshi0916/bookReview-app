@@ -1,0 +1,61 @@
+.book-list {
+  text-align: center;
+}
+
+.book-list__next-button-container {
+  margin: 20px;
+}
+
+.book-list__next-button,.book-list__prev-button {
+  font-size: 18px;
+  height: 35px;
+  width: 60px;
+}
+
+.book-list__table-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.book-list__table {
+  border-collapse: collapse;
+  width: 100%;
+  width: 800px;
+}
+
+.book-list__table-head {
+  font-size: 30px;
+}
+
+.book-list__table th,
+.book-list__table td {
+  border: 1px solid black;
+  padding: 15px;
+  width: 20%; /* 各列の幅を一律に20%に設定 */
+}
+
+/* ビューポートの幅が992px以下の場合 */
+@media (max-width: 992px) {
+  .book-list__table {
+    width: 700px;
+  }
+}
+
+/* ビューポートの幅が600px以下の場合（スマホ向け） */
+@media (max-width: 600px) {
+  .book-list__table {
+    max-width: 100%; /* テーブルの幅を全画面にする */
+  }
+
+  .book-list__table th,
+  .book-list__table td {
+    padding: 10px; /* パディングを小さくする */
+    font-size: 14px; /* フォントサイズを小さくする */
+  }
+
+  .book-list__table-head {
+    font-size: 20px; /* ヘッダーのフォントサイズを小さくする */
+  }
+}
